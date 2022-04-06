@@ -2,23 +2,47 @@
     font-family:Verdana, Geneva, sans-serif;
     font-size:12px;
     }
-    
-    .menu .image {
+
+    /* .menu .image {
         margin-top: 60px;
+    } */
+    #plano-de-fundo {
+        background-image: url('../images/background-mulheres.png');
     }
-    
-    .menu .image img {
+
+    /* .menu .image img {
+        margin-top: 60px;
         width: 140px;
         height: 140px;
         border-radius: 50%;
-        text-align: center;
-    }
+        text-align: center;  
+    } */
     .menu .author-content {
-        margin: 40px 0px 60px 0px;
+        margin: 150px 0px 190px 0px;
     }
     
-    .menu .author-content h4 {
+    /* .menu .author-content h1 {
         margin-bottom: 0px;
+    } */
+
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-weight: 100;
+    }
+
+    .teste {
+        color: #92006B;
+        font-weight: bold;
+        width: 180px;
+        height: 40px;
+        left: 745px;
+        top: 738px;
+        background-color: white;
+        border-radius: 100px;
+        padding: 12px;
+        box-sizing: border-box;
+        margin: auto;
     }
     
     .menu .author-content span {
@@ -90,7 +114,7 @@
         display: none;
     }
     
-    .menu {
+    /* .menu {
         left: 10%;
       -webkit-overflow-scrolling: touch;
       background-color: #6223F1;
@@ -107,7 +131,7 @@
       width: 20%;
       will-change: transform;
       z-index: 9999 !important;
-    }
+    } */
 
     .menu ul {
     margin: 0;
@@ -135,4 +159,20 @@
     background: #CCC;
     color: #000; 
     border-color: #000;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    #inscricao {
+        background-color: #92006B;
+        
+    }
+    .texto-inscricao {
+        color: white;
+    }
+    .inscricao-titulo {
+        color: white;
     }

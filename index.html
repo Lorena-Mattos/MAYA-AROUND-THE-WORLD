@@ -1,120 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
+    
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72f776e9bb.js" crossorigin="anonymous"></script>
 
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
-
+    
     <title>Maya Around The World</title>
-    <link rel="shortcut icon" href="./images/logoMaya.jpeg" />
+    <link rel="shortcut icon" href="img\logo.jpeg" />
 
-    <!-- Bootstrap core CSS onde estão as fontes desse código-->
-    <link href="libs//bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
 
-    <!-- Arquivos adicionais CSS -->
-    <link rel="stylesheet" href="css/fontawesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/owl.css" />
-    <link rel="stylesheet" href="css/lightbox.css" />
+    
 
 </head>
 
 <body>
-    <div id="plano-de-fundo">
+    <!-- ======= Header ======= -->
+    <header>
+        <div id="logo-container" class="logo-container">
+            <img class="logo" src="img/logo.jpeg" alt="Logo do Projeto Maya">
+        </div>
+        <div id="menu-desktop" class="menu-desktop">
+            <ul class="menu-items">
+                <li><a href="#sobre">Sobre o projeto</a></li>
+                <li><a href="#equipe">Time Maya</a></li>
+                <li><a href="#abordagem">Abordagens</a></li>
+                <li><a href="#participe">Faça parte</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+        </div>
+        <div id="menu-mobile" class="menu-mobile">
+            <img class="cursorClick" onclick="toggleMenu()" src="img/menu-mobile.svg" alt="Ícone do menu mobile">
+            <div id="menu-mobile-options" class="none">
+                <ul class="menu-mobile-items">
+                    <li onclick="toggleMenu()"><a href="#sobre">Sobre o projeto</a></li>
+                    <li onclick="toggleMenu()"><a href="#equipe">Time Maya</a></li>
+                    <li onclick="toggleMenu()"><a href="#abordagem">Abordagens</a></li>
+                    <li onclick="toggleMenu()"><a href="#participe">Faça parte</a></li>
+                    <li onclick="toggleMenu()"><a href="#footer">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
 
-      <section class="responsive-nav">
-        <div>
-      <!-- Menu superior -->
-        <ul>
-            <li><a href="#sobre">Sobre o projeto</a></li>
-            <li><a href="#">Time Maya</a></li>
-            <li><a href="#">Abordagens</a></li>
-            <li><a href="#inscricao">Faça parte</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-      </section>  
-        
-            <i class="fa fa-bars" id="menu-toggle"></i>
-            <div id="menu" class="menu">
-                <i class="fa fa-times" id="menu-close"></i>
-                <div class="container">
-                    <div class="author-content">
-                        <h1>MAYA AROUND THE WORLD</h1>
-                        <div class="teste">
-                          <a href="#inscricao">Faça parte</a>
-                        </div>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="hero-content">
+            <h1>MAYA</h1>
+            <h2>AROUND THE WORLD</h2>
+            <a href="https://forms.gle/SC1mg9xCTYAzvT346" 
+            class="btn-get-started scrollto"
+            target="blank" title="botão para se inscrever no projeto. O formulário será aberto em uma nova janela.">
+            <strong>Faça parte</strong></a>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main>
+
+        <!-- ======= Sobre Section ======= -->
+        <section id="sobre">
+            <div id="sobreTitulo">
+                <h3>Sobre o projeto</h3>
+            </div>
+            <div id="sobreConteudo">
+                <div id="sobreProjeto">
+                    <p>Orientado pelos ODS 1,3 5, 8, 9, 10 e 17, o projeto é voltado para mulheres em situação de vulnerabilidade social que desejam conquistar o mundo.</p>
+                    <p>Em outras palavras, visa ajudar a combater a pobreza, ajudar a promover a igualdade de gênero, fornecer mecanismos para o trabalho decente e crescimento econômico, fomentar a inovação e a tecnologia como meios de empoderamento, desenvolvimento industrial e redução das desigualdades.</p>
+                    <p>Garantir os direitos das mulheres, a saúde e o bem-estar. Todas as Consultorias e Mentorias terão 10% do valor do serviço destinado ao <b>Projeto Maya Around the World</b>.</p>
+                </div>    
+                <div id="sobreFundadora">
+                    <img src="img/team-member.png" alt="Foto de uma mulher negra, de óculos, cabelos presos, sorrindo, com aparelho nos dentes,
+                    com a mão apoiada no queixo. Ela usa uma camisa branca e uma blusa amarela de manga comprida.
+                    É possível notar que em sua frente há um notebook. O fundo da imagem é branco.">
+                    <p><strong>Gilsanne Mutuku</strong></p>
+                    <p>Fundadora e CEO da ANNERI Co.</p>
+                    <div id="sobreIcons" class="icons">
+                        <a href="https://www.instagram.com/we.are.maya" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gilsanne-mutuku-42605019a/" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </div>
-                
-                    <section id="sobre">
-                      <h3>Sobre o projeto</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                        Iste maxime perspiciatis vero delectus enim ut provident, dignissimos
-                        aliquam inventore! <br />
-                        Saepe sequi sunt illum blanditiis dolorum aut sapiente quisquam minima
-                        expedita.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-                        Eum odio deserunt ut. <br />
-                        Odio perspiciatis quaerat incidunt nam sequi, labore, illo et sed animi
-                        dignissimos deserunt <br />
-                        consectetur quidem harum culpa soluta?
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                        Iste maxime perspiciatis vero delectus enim ut provident, dignissimos
-                        aliquam inventore! <br />
-                        Saepe sequi sunt illum blanditiis dolorum aut sapiente quisquam minima
-                        expedita.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-                        Eum odio deserunt ut. <br />
-                        Odio perspiciatis quaerat incidunt nam sequi, labore, illo et sed animi
-                        dignissimos deserunt <br />
-                        consectetur quidem harum culpa soluta?
-                      </p>
-                    </section>
-                    
-                    <section class="time">
-                      <h3>Conheça o time Maya</h3>
-                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Sobre ======= -->
 
-                    <section class="abordagens">
-                      <h3>Neste projeto abordaremos</h3>
-                    </section>
+        <!-- ======= Equipe Section ======= -->
+        <section id="equipe">
+            <div id="equipeTitulo">
+                <h3>Conheça o Team Maya</h3>
+            </div>
+            <div id="equipeMembros">
+                <div class="equipePessoa">
+                    <div><img class="imgTeam"  src="img/member1.jpg" alt="Foto de uma mulher negra de cabelos pretos cacheados, sorrindo, usando camisa verde."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Paula Borges</p>
+                        <p>Advogada e influenciadora. Atua nas áreas dos direitos das mulheres</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/paularborgess" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:paularborges9@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    <section>
-                      <div id="inscricao">
-                        <h3 class="inscricao-titulo">Eu quero participar do projeto Maya</h3>
-                        <span class="texto-inscricao">Inscrições de 28 de março a 28 de abril</span>
-                        
-                        <form class="inscricao-form">
-                          <input type="text" />
-                          <input type="text" />
-                          <input type="email" />
-                           <input type="submit" />
-                        </form>
-                      
-                      </div>
-                    </section>
+                <div class="equipePessoa">
+                    <div><img class="imgTeam"  src="img/member2.jpg" alt="Foto de uma mulher branca, de cabelos pretos lisos na altura dos ombros, sorrindo. 
+                        Ela está sentada, com uma perna cruzada e os braços apoiados na perna. Está usando um macacão rosa. No fundo da foto há plantas."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Cibelle Gerardi</p>
+                        <p>Advogada, atuando nas áreas de direito previdenciário, direito internacional, direito civil e direito da mulher.</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/cibellegerardi" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cibellegerardi" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:cibelle.gerardi@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    <section class="contato">
+                <div class="equipePessoa">
+                    <div><img  class="imgTeam" src="img/member3.jpg" alt="Foto de uma mulher branca de cabelos castanhos, lisos e longos. Ela está sorrindo,
+                        com os braços cruzados. Usa uma blusa branca e um casaco preto. O fundo da imagem é branco."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Letícia Martins</p>
+                        <p>Advogada colaborativa e estrategista. Membra do Instituto Brasileiro de Direito de Família (IBDFAM).</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/leticiamartinsc.adv" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/leticiamartinsc" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:leticiamartinsc.adv@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    </section>
+                <div class="equipePessoa">
+                    <div><img class="imgTeam" src="img/member4.jpg" alt="Foto de uma mulher branca, de cabelos loiros, lisos, na altura dos ombros.
+                        Ela está de braços cruzados, usa blusa preta e terno branco. O fundo da imagem é acinzentado."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Adriana Foltz</p>
+                        <p>Advogada em direito de família e sucessões, violência doméstica, cível, trabalhista e previdenciário.</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://instagram.com/adrianafoltz" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:adrianafoltz@gmail.com" alt="Email" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    <script src="app.js"></script>
-                    <noscript>You need to enable JavaScript to view the full site.</noscript>
+                <div class="equipePessoa">
+                    <div><img  class="imgTeam" src="img/member5.jpg" alt="Foto de uma mulher branca, de cabelos loiros, lisos, na altura dos ombros.
+                        Ela está com uma mão no queixo e uma expressão tranquila no rosto. Usa colar, anel e relógio dourados. Sua blusa é laranja."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Simone Gonçalves</p>
+                        <p>Fundadora da Growth Gestão e Treinamentos. Psicóloga, formada em Administração de Empresas e Coach. </p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.growthgt.com" alt="Site" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="https://www.instagram.com/simonegoncalves.growth" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simone-gon%C3%A7alves" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:growthgestao@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="equipePessoa">
+                    <div><img  class="imgTeam" src="img/member6.jpg" alt="Foto de uma mulher negra, com tranças no cabelo preto, que tem algumas mexas cinzas.
+                        Ela usa maquiagem em tons de rosa e preto e seu batom é da cor vinho. Usa um brinco grande branco, com um detalhe prateado.
+                        Ela está usando blusa vinho e o fundo é claro."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Marília Simão</p>
+                        <p>CEO e Fundadora da H. UP Assessoria, Empres de BPO Financeiro para PMEs do setor de Construção Civil</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.hupassessoria.com.br" alt="Site" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="https://www.instagram.com/h.up_assessoria" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mar%C3%ADlia-sim%C3%A3o-791737100" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:h.upconsult@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="equipePessoa">
+                    <div><img  class="imgTeam" src="img/member7.jpg" alt="Foto de uma mulher sorrindo, de cabelos loiros, lisos, na altura dos ombros.
+                        Ela usa maquiagem em tons terrosos, está de blusa amarela e terninho escuro. A mulher está sentada, olhando para a câmera e 
+                        escrevendo em uma agenda aberta."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Rosana Gabriela Andrade</p>
+                        <p>Empresária, jornalista e especialista em estratégia digital</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://beacons.ai/rgabrieladigital" alt="Site" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rgabrieladigital" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jornalistapr" alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rgmarketingdigitalredes@gmail.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="equipePessoa">
+                    <div><img class="imgTeam"  src="img/member8.jpg" alt="Foto de uma mulher sorrindo, de cabelos pretos, lisos e longos.
+                        Ela usa batom avermelhado, um colar marrom e é possível ver uma parte de sua camisa, que tem as cores cinza, preto e vinho."></div>
+                    <div class="nomePessoa">
+                        <p class="pBold">Daniela Vasconcellos</p>
+                        <p>Advogada da área Cível, Família e Previdenciária. Mediadora da Vara de Família de Florianópolis. Atual vice-presidente da Comissão de Igualdade Racial da OAB/SC</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.danielavasconcellosadv.com" alt="Site" target="_blank">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="https://www.instagram.com/danielavasconcellosadv" alt="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniela-de-campos-vasconcellos-301341150?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBsC94uEDRxiBVgCDusfmNQ%3D%3D" 
+                        alt="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ddecampos@yahoo.com" alt="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Equipe ======= -->
+
+        <!-- ======= Abordagens Section ======= -->
+        <section id="abordagem">
+            <div id="abordTitulo">
+                <h3>Nesse projeto abordaremos</h3>
+            </div>
+            <div id="abordBlocks">
+                <div>
+                    <p><strong>Mentoria para Negócios Internacionais</strong></p>
+                    <p>Com mentorias nas áreas de finanças, gestão, tecnologia, Personal Brand, Business Plan, análise de mercado, desenvolvimento de produtos e MVP.</p>
+                </div>
+                <div>
+                    <p><strong>Assessoria Jurídica</strong></p>
+                    <p>Assessoria jurídica simples e ágil nas áreas de Direito da Mulher e Direito Internacional.</p>
+                </div>
+                <div>
+                    <p><strong>Terapia</strong></p>
+                    <p>Terapia em grupo para mulheres. Grupo onde a mulher poderá trocar experiências e aprendizados e se libertar de crenças limitantes.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Abordagens ======= -->
+
+        <!-- ======= Participe Section ======= -->
+        <section id="participe">
+            <div id="participeTitulo">
+                <h3>Eu quero participar do projeto Maya</h3>
+                <p>Clique no botão abaixo para entrar no formulário de inscrição.</p>
+                <p>O formulário será aberto em uma nova janela e você precisará preencher apenas seu nome, telefone e e-mail para que o time Maya entre em contato com você.</p>
+                <a class="button" target="_blank" href='https://forms.gle/SC1mg9xCTYAzvT346' title="botão para se inscrever no projeto. O formulário será aberto em uma nova janela.">Inscreva-se!</a>
+            </div>
+           
+            <div id="participeImagens">
+                <img src="img/logo_bgtransp.png" alt="">
+            </div>
+        </section>
+        <!-- ======= End Participe ======= -->
+
+    </main>
 </body>
 
-<footer>
-  <p>Projeto desenvolvido por... 2022</p>
-</footer>
+<section id="footer">
+    <div id="parceiros">
+        <div id="apoio">
+            <p class="pBold">Este projeto é apoiado por:</p>
+            <img class="imgLogoParceiro" src="img/logo-aneri.png" alt="">
+        </div>
+        <div id="empresas">
+            <p class="pBold">Empresas parceiras</p>
+            <div id="logoParceiras">
+                <img class="imgLogoParceiro" src="img/logo-parceiro1.png" alt="">
+                <img class="imgLogoParceiro" src="img/logo-parceiro2.jpeg" alt="">
+                <img class="imgLogoParceiro" src="img/logo-parceiro3.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="endereco">
+        <p class="pBold">Endereço</p>
+        <p>Porto Alegre, Brasil</p>
+        <p>Nairobi, Quénia</p><br>
+
+        <p class="pBold">Email</p>
+        <p>mayaworldpro@gmail.com</p><br>
+
+        <p class="pBold">Telefone</p>
+        <p>+55 (51) 98916-4687</p><br>
+    </div>
+
+    <div id="contato">
+        <a class="button" target="_blank" href='https://forms.gle/VocoK3MX973JwPYP7' title="Clique no botão para abrir o formulário de contato em uma nova página">Entre em contato</a>
+    </div>
+</section>
+
 </html>
